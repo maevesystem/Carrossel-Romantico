@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nós.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&family=Poppins:ital,wght@0,300;1,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1 class="nossodia">Nosso dia 02,
+        Feliz 1 ano!</h1>
+        <audio controls autoplay class="music">
+            <source src="music/Y2meta.app - John Legend - Conversation in the Dark (Tradução-Legendado) (320 kbps).mp3" type="audio/mp3">
+          </audio>
+          
+        <h2 class="inspiracao">Hoje eu te dedico Your Name.</h2>
+        <h3 class="texto">
+            No filme, dois corações dançam em sincronia através das sombras do tempo.
+            são envolvidos por um laço transparente que transcende as barreiras do sonho. 
+            Num balé entre o crepúsculo e a aurora, eles trocam não apenas corpos, mas destinos entrelaçados. 
+            onde o amor floresce como uma constelação efêmera, guiando-os por caminhos imprevisíveis.
+            é uma melodia celestial, uma dança entre o céu e a terra, onde os laços do coração transcendem 
+            as fronteiras do tempo, moldando uma história que ressoa além das estrelas.
+            como a história de nós dois.
+        </h3>
+  <div class="slider" x-data="{start: true, end: false}" style="padding-top: 20px;">
+    <div class="slider__content" x-ref="slider" x-on:scroll.debounce="$refs.slider.scrollLeft == 0 ? start = true : start = false; Math.abs(($refs.slider.scrollWidth - $refs.slider.offsetWidth) - $refs.slider.scrollLeft) < 5 ? end = true : end = false;">
+      <div class="slider__item">
+        <img class="slider__image" src= "/img/eu & ele 1.jpg" alt="Image">
+        <div class="slider__info">
+          <h2 class="frases">O tempo parou quando nossos olhares se cruzaram, e o romance começou a ser escrito nas linhas invisíveis do destino.</h2>
+        </div>
+      </div>
+      <div class="slider__item">
+        <img class="slider__image" src="/img/eu & ele 2.jpg" alt="Image">
+        <div class="slider__info">
+          <h2 class="frases">Seus olhos são capítulos de um livro que eu desejo reler todos os dias.</h2>
+        </div>
+      </div>
+      <div class="slider__item">
+        <img class="slider__image" src="/img/eu & ele 3.jpg" alt="Image">
+        <div class="slider__info">
+          <h2 class="frases">Seus abraços são parágrafos que acalmam as tempestades dentro de mim.</h2>
+        </div>
+      </div>
+      <div class="slider__item">
+        <img class="slider__image" src="/img/eu & ele 4.jpg" alt="Image">
+        <div class="slider__info">
+          <h2 class="frases">Descobri que a felicidade é um capítulo escrito a dois.</h2>
+        </div>
+      </div>
+      <div class="slider__item">
+        <img class="slider__image" src="/img/eu & ele 5.jpg" alt="Image">
+        <div class="slider__info">
+          <h2 class="frases">Não será fácil. E teremos de nos empenhar a cada dia. Mas quero fazer isso porque te quero. Quero tudo de ti, para sempre, você e eu.</h2>
+        </div>
+      </div>
+      <div class="slider__item">
+        <img class="slider__image" src="/img/eu & ele 6.jpg" alt="Image">
+        <div class="slider__info">
+          <h2 class="frases">Passei todas as vidas, antes desta, procurando você. Não alguém como você, mas você, porque a sua alma e a minha têm de estar sempre juntas.</h2>
+        </div>
+      </div>
+      <div class="slider__item">
+        <img class="slider__image" src="/img/eu & ele 7.jpg" alt="Image">
+        <div class="slider__info">
+          <h2 class="frases">Poucas coisas ainda me fazem feliz, e você é uma delas</h2>
+        </div>
+      </div>
+      <div class="slider__item">
+        <img class="slider__image" src="/img/eu & ele 8.jpg" alt="Image">
+        <div class="slider__info">
+          <h2 class="frases">Você está tão ocupado sendo você mesmo que não faz ideia de quão absolutamente sem igual você é.</h2>
+        </div>
+      </div>
+      <div class="slider__item">
+        <img class="slider__image" src="/img/eu & ele 9.jpg" alt="Image">
+        <div class="slider__info">
+          <h2 class="frases">Você me deu uma eternidade dentro dos nossos dias.</h2>
+        </div>
+      </div>
+      <div class="slider__item">
+        <img class="slider__image" src="/img/eu & ele 10.jpg" alt="Image">
+        <div class="slider__info">
+          <h2 class="frases">Eu te amo, não só agora, mas sempre.</h2>
+        </div>
+      </div>
+    </div>
+    <div class="slider__nav" style="display: flex;justify-content: center;">
+      <button class="slider__nav__button" x-on:click="$refs.slider.scrollBy({left: $refs.slider.offsetWidth * -1, behavior: 'smooth'});" x-bind:class="start ? '' : 'slider__nav__button--active'">Anterior</button>
+      <button class="slider__nav__button" x-on:click="$refs.slider.scrollBy({left: $refs.slider.offsetWidth, behavior: 'smooth'});" x-bind:class="end ? '' : 'slider__nav__button--active'">Próximo</button>
+    </div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/alpinejs/3.10.2/cdn.js"></script>
+  <footer class="rodape">Desenvolvido por Ingrid Nunes</footer>
+</body>
+</html>
+
