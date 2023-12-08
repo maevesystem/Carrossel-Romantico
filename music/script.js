@@ -1,0 +1,1 @@
+// incluso no html https://cdnjs.cloudflare.com/ajax/libs/alpinejs/3.10.2/cdn.js
